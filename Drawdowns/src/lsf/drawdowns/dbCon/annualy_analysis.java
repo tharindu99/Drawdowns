@@ -175,7 +175,7 @@ public class annualy_analysis extends HttpServlet {
 		else if (userPath.equals("/scattermcaptop10")){
 			//pwr.print(clm_grp.scatterMcap());
 						
-			String query = "SELECT marketCapitalization,CAPM_resid_date from sys_top10_losess WHERE YRMO like '"+yrmo+"%' ORDER BY marketCapitalization*CAPM_resid";
+			String query = "SELECT marketCapitalization,CAPM_resid_date from sys_top10_all WHERE YRMO like '"+yrmo+"%' ORDER BY marketCapitalization*CAPM_resid";
 			SQLQuery q = (SQLQuery) session.createSQLQuery(query);
 
 			@SuppressWarnings("unchecked")

@@ -165,8 +165,11 @@ function calendarWeekHour(Gid, Gwidth, Gheight, Gsquare)
                     //console.log("fff");
                  })
                  .style('fill', ("color", function(d) { return d.color; }))
-                 .style("stroke", '#000');
-    
+                 //.style('fill', ("color", function(d) { return d.color; }))
+                 //.style('fill', "none")
+                 //.style("stroke-width",5)
+                 //.style("stroke", ("color", function(d) { return d.color; }));
+                   .style("stroke","#000");
     
 
 	text = row.selectAll(".label")

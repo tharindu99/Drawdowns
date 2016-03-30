@@ -499,7 +499,7 @@ public JsonObject Index_vw_return() {
 	}
 	
 	public JsonObject scatterMcap(){
-		String sql = "SELECT CAPM_resid_date,marketCapitalization from sys_top10_losess WHERE YRMO like '" + request.getParameter("yrmo") + "%'" + "ORDER BY marketCapitalization";
+		String sql = "SELECT CAPM_resid_date,marketCapitalization from sys_top10_all WHERE YRMO like '" + request.getParameter("yrmo") + "%'" + "ORDER BY marketCapitalization";
 		SQLQuery q = session.createSQLQuery(sql);
 		
 		List<BigDecimal> Arr_mcap = new ArrayList<>();
