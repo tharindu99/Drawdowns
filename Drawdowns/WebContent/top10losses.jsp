@@ -214,8 +214,8 @@ var Dr_value=100,LossMcap_value=20,tab=2004,data_init;
 									<!-- <div id="loading" style="display:table-cell; vertical-align:middle; text-align:center"><img id="loading-image" src='demo_wait.gif'/><br>Loading..</div>
  -->								
 								
-											Drawdown Value Top : <span id="Dr_value<%=i%>"  style="font-weight:bold;"></span>
-											<div id="Dr_slider<%=i%>"></div>
+											<%-- Drawdown Value Top : <span id="Dr_value<%=i%>"  style="font-weight:bold;"></span>
+											<div id="Dr_slider<%=i%>"></div> --%>
 															
 									
 								<%-- <form>

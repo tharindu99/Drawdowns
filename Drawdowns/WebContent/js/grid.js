@@ -166,10 +166,11 @@ function calendarWeekHour(Gid, Gwidth, Gheight, Gsquare)
                  })
                  .style('fill', ("color", function(d) { return d.color; }))
                  //.style('fill', ("color", function(d) { return d.color; }))
-                 //.style('fill', "none")
-                 //.style("stroke-width",5)
-                 //.style("stroke", ("color", function(d) { return d.color; }));
-                   .style("stroke","#000");
+                 .style('fill', "none")
+                 .style("stroke-width",5)
+                 .style("stroke-opacity",0.4)
+                 .style("stroke", ("color", function(d) { return d.color; }));
+                  // .style("stroke","#000");
     
 
 	text = row.selectAll(".label")
@@ -238,7 +239,8 @@ function randomData(gridWidth, gridHeight, square)
 			}else{
 				data[index_a].push({ 
                                 time: index_b, 
-                                value: '['+X_val[ccc]+","+pattern[ccc]+","+Y_val[ccc]+","+Z_val[ccc]+"]",
+                                //value: '['+X_val[ccc]+","+pattern[ccc]+","+Y_val[ccc]+","+Z_val[ccc]+"]",
+                                value: '[ '+pattern[ccc]+" ]",
                                 width: gridItemWidth,
                                 height: gridItemHeight,
                                 x: xpos,
