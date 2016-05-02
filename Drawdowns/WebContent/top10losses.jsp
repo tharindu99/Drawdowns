@@ -26,7 +26,7 @@
 <script src="bootstrap/js/bootstrap-toggle.min.js"></script>
 
 <script>
-var Dr_value=100,LossMcap_value=20,tab=2004,data_init;
+var Dr_value=100,LossMcap_value=100,tab=2004,data_init;
 	$(function() {
 		$("#tabs").tabs();
 		$( "#Dr_slider2004" ).slider({
@@ -209,7 +209,7 @@ var Dr_value=100,LossMcap_value=20,tab=2004,data_init;
 						<div class="row">
 							<div class="col-lg-12" style="margin: 30px 30px 30px">
 								
-									<h3 class="page-header">Market Behavior Individual Level - color based on LMC</h3>	
+									<h3 class="page-header">Market Behavior Individual Level - color based on Drawdown value</h3>	
 										
 									<!-- <div id="loading" style="display:table-cell; vertical-align:middle; text-align:center"><img id="loading-image" src='demo_wait.gif'/><br>Loading..</div>
  -->								

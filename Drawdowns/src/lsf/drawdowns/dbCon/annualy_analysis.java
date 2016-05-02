@@ -211,7 +211,7 @@ public class annualy_analysis extends HttpServlet {
 		else if (userPath.equals("/scattermcap")){
 			//pwr.print(clm_grp.scatterMcap());
 						
-			String query = "SELECT marketcapitalization,CAPM_resid_D from sys_scatter_plot WHERE YRMO like '"+yrmo+"%' ORDER BY marketcapitalization*CAPM_resid";
+			String query = "SELECT marketcapitalization,CAPM_resid_D from sys_scatter_plot WHERE YRMO like '"+yrmo+"%' ORDER BY CAPM_resid";
 			SQLQuery q = (SQLQuery) session.createSQLQuery(query);
 
 			@SuppressWarnings("unchecked")

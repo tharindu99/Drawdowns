@@ -25,7 +25,7 @@
 <script src="bootstrap/js/bootstrap-toggle.min.js"></script>
 
 <script>
-var Dr_value=20,LossMcap_value=20,tab=2004,data_init;
+var Dr_value=100,LossMcap_value=100,tab=2004,data_init;
 	$(function() {
 		$("#tabs").tabs();
 			$( "#Dr_slider2004" ).slider({
@@ -144,13 +144,13 @@ var Dr_value=20,LossMcap_value=20,tab=2004,data_init;
 						<div class="row">
 							<div class="col-lg-12" style="margin: 30px 30px 30px">
 								
-									<h2 class="page-header">Market Behavior Individual Level</h2>	
+									<h2 class="page-header">Market Behavior Individual Level - color based on Drawdown value</h2>	
 										
 									<!-- <div id="loading" style="display:table-cell; vertical-align:middle; text-align:center"><img id="loading-image" src='demo_wait.gif'/><br>Loading..</div>
  -->								
-								
+								<%-- 
 											Drawdown Value Top : <span id="Dr_value<%=i%>"  style="font-weight:bold;"></span>
-											<div id="Dr_slider<%=i%>"></div>							
+											<div id="Dr_slider<%=i%>"></div>	 --%>						
 									
 								
 								<form>
@@ -181,7 +181,7 @@ var Dr_value=20,LossMcap_value=20,tab=2004,data_init;
 						});
 							$("#ta<%=i%>").click(function(){
 								
-								Dr_value = 20;
+								Dr_value = 100;
 								$("#Dr_value<%=i%>").text(Dr_value+ " %");
 								tab =<%=i%>;
 								drw_mcap_SCAT(<%=i%>,Dr_value,LossMcap_value);	
